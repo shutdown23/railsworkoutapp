@@ -9,9 +9,10 @@
 %body
 	%nav.navbar.navbar-default
 		.container
-			= link_to "Workout Log", root_path, class: "navbar-brand"
-		.nav.navbar-nav.navbar-right
-			= link_to "New Workout", new_workout_path, class: "navbar-default "
+			.navbar-header
+				= link_to "Workout Log", root_path, class: "navbar-brand"
+			.nav.navbar-nav.navbar-right
+				= link_to "New Workout", new_workout_path, class: "navbar-collapse "
 
 	.container			
 		= yield
